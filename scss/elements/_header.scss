@@ -5,52 +5,96 @@
   position: fixed;
   width: 100vw;
   z-index: 999999;
+
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
+
+    #hamburger {
+      display: none;
+      @media #{$media-mobile} {
+        display: block;
+        font-size: 1.5em;
+        padding-right: 1.5em;
+        color: $blue;
+      }
+    }
+
     .logo {
-      font-family: var(--raleway);
-      color: var(--blue);
+      font-family: $raleway;
+      color: $blue;
       font-size: 32px;
       font-weight: 300;
       text-decoration: none;
+    }
+    #menu {
+      @media #{$media-mobile} {
+
+      }
+      .menu__list {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        @media #{$media-mobile} {
+          display: flex;
+          flex-direction: column;
+          justify-content: left;
+        }
+
+        .menu__el {
+          padding-left: 47px;
+          padding-right: 47px;
+          @media #{$media-mobile} {
+            padding: 0;
+          }
+
+          .menu__link {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #A5A5A5;
+            font-size: 11px;
+            font-weight: 700;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+            transition: 0.5s;
+            padding-top: 28px;
+            padding-bottom: 28px;
+
+          }
+
+          .menu__link:hover {
+            color: #000;
+            border-bottom: 4px solid $blue;
+          }
+        }
+      }
+
+      @media #{$media-mobile} {
+        display: none;
+        transition: 1s;
+      }
+    }
+    #menu-visibility {
+      display: none;
+      &:checked + #menu {
+        display: flex;
+        justify-content: left;
+        width: 100vw;
+        padding-top: 20em;
+        background: #fff;
+        box-shadow: 0 3px 6px #00000029;
+      }
     }
   }
 }
 
 
 
-.menu {}
 
-.menu__list {
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
 
-}
-.menu__el {
-  padding-left: 47px;
-  padding-right: 47px;
-}
 
-.menu__link {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #A5A5A5;
-  font-size: 11px;
-  font-weight: 700;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 100%;
-  transition: 0.5s;
-  padding-top: 28px;
-  padding-bottom: 28px;
 
-}
-.menu__link:hover {
-  color: #000;
-  border-bottom: 4px solid var(--blue);
-}

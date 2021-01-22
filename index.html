@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Shop</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="all">
+
         <header class="header">
             <div class="container">
                 <a href="/" class="logo">
                     BestShop
                 </a>
-
-                <nav class="menu">
+                <input type="checkbox" id="menu-visibility">
+                <nav id="menu">
                     <ul class="menu__list">
                         <li class="menu__el"><a class="menu__link" href="">Why us</a></li>
                         <li class="menu__el"><a class="menu__link" href="">Benefits</a></li>
@@ -25,6 +26,9 @@
                         <li class="menu__el"><a class="menu__link" href="">Contact</a></li>
                     </ul>
                 </nav>
+                <label id="hamburger" for="menu-visibility">
+                    <i class="fa fa-bars"></i>
+                </label>
             </div>
         </header>
 
@@ -126,28 +130,32 @@
                     </h2>
                     <div class="pricing__content">
                         <div class="pricing__option">
-                            <h2 class="option__title">Basic</h2>
-                            <h3 class="option__price">$0</h3>
-                            <div class="option__info">
-                                <div class="option__info-yes">
-                                    <img src="images/Ckechmark-1.svg" alt="">
-                                    <p>100 MB HDD</p>
-                                </div>
-                                <div class="option__info-yes">
-                                    <img src="images/Ckechmark-1.svg" alt="">
-                                    <p>1 subdomain</p>
-                                </div>
-                                <div class="option__info-yes">
-                                    <img src="images/Ckechmark-1.svg" alt="">
-                                    <p>2 E-mails</p>
-                                </div>
-                                <div class="option__info-yes">
-                                    <img src="images/Close.svg" alt="">
-                                    <p>Two year licence</p>
-                                </div>
-                                <div class="option__info-yes">
-                                    <img src="images/Close.svg" alt="">
-                                    <p>Full support</p>
+                            <div class="pricing__text">
+                                <h2 class="option__title">Basic</h2>
+                                <h3 class="option__price">$0</h3>
+                            </div>
+                            <div class="pricing__list">
+                                <div class="option__info">
+                                    <div class="option__info-yes">
+                                        <img src="images/Ckechmark-1.svg" alt="">
+                                        <p>100 MB HDD</p>
+                                    </div>
+                                    <div class="option__info-yes">
+                                        <img src="images/Ckechmark-1.svg" alt="">
+                                        <p>1 subdomain</p>
+                                    </div>
+                                    <div class="option__info-yes">
+                                        <img src="images/Ckechmark-1.svg" alt="">
+                                        <p>2 E-mails</p>
+                                    </div>
+                                    <div class="option__info-yes">
+                                        <img src="images/Close.svg" alt="">
+                                        <p>Two year licence</p>
+                                    </div>
+                                    <div class="option__info-yes">
+                                        <img src="images/Close.svg" alt="">
+                                        <p>Full support</p>
+                                    </div>
                                 </div>
                             </div>
                             <a href="" class="pricing__btn">
@@ -155,66 +163,73 @@
                             </a>
                         </div>
                         <div class="pricing__option2">
-                            <h2 class="option__title">Professional</h2>
-                            <h3 class="option__price2">$25</h3>
-                            <h3 class="option__limited">Limited offer</h3>
-                            <div class="option__info">
-                                <div class="option__info-yes">
-                                    <img src="images/Ckechmark-1.svg" alt="">
-                                    <p>100 MB HDD</p>
-                                </div>
-                                <div class="option__info-yes">
-                                    <img src="images/Ckechmark-1.svg" alt="">
-                                    <p>1 subdomain</p>
-                                </div>
-                                <div class="option__info-yes">
-                                    <img src="images/Ckechmark-1.svg" alt="">
-                                    <p>2 E-mails</p>
-                                </div>
-                                <div class="option__info-yes">
-                                    <img src="images/Ckechmark-1.svg" alt="">
-                                    <p>Two year licence</p>
-                                </div>
-                                <div class="option__info-yes">
-                                    <img src="images/Close.svg" alt="">
-                                    <p>Full support</p>
+                            <div class="pricing__text">
+                                <h2 class="option__title">Professional</h2>
+                                <h3 class="option__price2">$25</h3>
+                                <h3 class="option__limited">Limited offer</h3>
+                            </div>
+                            <div class="pricing__list">
+                                <div class="option__info">
+                                    <div class="option__info-yes">
+                                        <img src="images/Ckechmark-1.svg" alt="">
+                                        <p>100 MB HDD</p>
+                                    </div>
+                                    <div class="option__info-yes">
+                                        <img src="images/Ckechmark-1.svg" alt="">
+                                        <p>1 subdomain</p>
+                                    </div>
+                                    <div class="option__info-yes">
+                                        <img src="images/Ckechmark-1.svg" alt="">
+                                        <p>2 E-mails</p>
+                                    </div>
+                                    <div class="option__info-yes">
+                                        <img src="images/Ckechmark-1.svg" alt="">
+                                        <p>Two year licence</p>
+                                    </div>
+                                    <div class="option__info-yes">
+                                        <img src="images/Close.svg" alt="">
+                                        <p>Full support</p>
+                                    </div>
                                 </div>
                             </div>
                             <a href="" class="pricing__btn2">
-                                Begin
+                                    Begin
                             </a>
                         </div>
                         <div class="pricing__option3">
-                            <h2 class="option__title">Premium</h2>
-                            <h3 class="option__price3">$60</h3>
-                            <h3 class="option__limited">Limited offer</h3>
-                            <div class="option__info">
-                                <div class="option__info-yes">
-                                    <img src="images/Ckechmark-1.svg" alt="">
-                                    <p>100 MB HDD</p>
-                                </div>
-                                <div class="option__info-yes">
-                                    <img src="images/Ckechmark-1.svg" alt="">
-                                    <p>1 subdomain</p>
-                                </div>
-                                <div class="option__info-yes">
-                                    <img src="images/Ckechmark-1.svg" alt="">
-                                    <p>2 E-mails</p>
-                                </div>
-                                <div class="option__info-yes">
-                                    <img src="images/Ckechmark-1.svg" alt="">
-                                    <p>Two year licence</p>
-                                </div>
-                                <div class="option__info-yes">
-                                    <img src="images/Ckechmark-1.svg" alt="">
-                                    <p>Full support</p>
+                            <div class="pricing__text">
+                                <h2 class="option__title">Premium</h2>
+                                <h3 class="option__price3">$60</h3>
+                                <h3 class="option__limited">Limited offer</h3>
+                            </div>
+                            <div class="pricing__list">
+                                <div class="option__info">
+                                    <div class="option__info-yes">
+                                        <img src="images/Ckechmark-1.svg" alt="">
+                                        <p>100 MB HDD</p>
+                                    </div>
+                                    <div class="option__info-yes">
+                                        <img src="images/Ckechmark-1.svg" alt="">
+                                        <p>1 subdomain</p>
+                                    </div>
+                                    <div class="option__info-yes">
+                                        <img src="images/Ckechmark-1.svg" alt="">
+                                        <p>2 E-mails</p>
+                                    </div>
+                                    <div class="option__info-yes">
+                                        <img src="images/Ckechmark-1.svg" alt="">
+                                        <p>Two year licence</p>
+                                    </div>
+                                    <div class="option__info-yes">
+                                        <img src="images/Ckechmark-1.svg" alt="">
+                                        <p>Full support</p>
+                                    </div>
                                 </div>
                             </div>
                             <a href="" class="pricing__btn3">
-                                Begin
+                                    Begin
                             </a>
                         </div>
-
                     </div>
                 </div>
         </section>
@@ -280,6 +295,5 @@
         </footer>
 
     </div>
-
 </body>
 </html>
