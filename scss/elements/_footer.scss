@@ -1,0 +1,31 @@
+.footer {
+  background: #F7F7F7;
+  box-shadow: 0 -5px 40px #00000029;
+}
+.footer__container {
+  margin-top: 100px;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__text {}
+.footer__title {
+  font-family: var(--raleway);
+  color: var(--blue);
+  font-size: 26px;
+  font-weight: 300;
+  margin-bottom: 7px;
+}
+.footer__txt {
+  font-size: 11px;
+  font-weight: 300;
+  color: #A5A5A5;
+  margin-top: 0;
+}
+.footer__icons {
+  width: 68px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
