@@ -52,9 +52,7 @@
             font-weight: 600;
             color: $blue;
             margin-bottom: 40px;
-            @media #{$media-mobile} {
-              padding-top: 0.5rem;
-            }
+            padding-top: 0.5rem;
           }
           .form-input {
             border: none;
@@ -64,17 +62,14 @@
             font-size: 12px;
             color: #707070;
             text-align: left;
-            @media #{$media-mobile} {
-              padding-top: 0.5rem;
-            }
+            padding-top: 0.5rem;
           }
         }
         .form-row-btn {
           display: flex;
           flex-direction: row-reverse;
-          @media #{$media-mobile} {
-            padding-top: 0.5rem;
-          }
+          padding-top: 0.5rem;
+
 
           .form-btn {
             background: $blue;
